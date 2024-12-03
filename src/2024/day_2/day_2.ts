@@ -1,7 +1,7 @@
 import readFile from "../../utils/readFile";
 import getDifference from "../../utils/getDifference";
 
-const checkRowValidity = (row: string[]) => {
+const checkRowValidity = (row: string[]): boolean => {
   let increasing: boolean = false;
   if (Number(row[0]) < Number(row[1])) increasing = true;
   for (let i = 1; i < row.length; i++) {
